@@ -4,8 +4,12 @@
 # on, then once a week) and blocks every domain listed here — and their
 # subdomains — on top of its built-in list.
 #
-# Format: one domain per line. "#" starts a comment. Hosts-file lines such as
-# "0.0.0.0 example.com" also work. Anything that isn't a plain domain is ignored.
+# Format:
+#   example.com             block this domain (and its subdomains)
+#   0.0.0.0 example.com     hosts-file lines work too
+#   ##.ad-banner            hide matching elements on every site (CSS selector)
+#   example.com##div#promo  hide matching elements on that site only
+# "#" followed by a space starts a comment. Anything else is ignored.
 #
 # Add new domains at the end of the matching section.
 
@@ -15,3 +19,10 @@ adsterratools.com
 accountut.com
 profitablecpmrate.com
 highperformanceformat.com
+
+# --- Element hiding (hides the empty boxes ads leave behind) ---
+##ins.adsbygoogle
+##.adsbygoogle
+##div[id^="div-gpt-ad"]
+##iframe[src*="doubleclick.net"]
+##iframe[src*="googlesyndication.com"]

@@ -16,19 +16,24 @@ This repository only hosts **release APKs**. Get the latest version from
   - pause / resume, automatic retry when the connection drops
   - downloads survive the app being closed and can be resumed
   - SHA-256 / MD5 checksum verification
+  - **multi-connection downloads** (default 4, up to 64) for big files
+  - queue (3 at a time) and Pause / Resume / Cancel right from the notification
   - **download from a pasted link** — direct files download right away (PixelDrain and
     BuzzHeavier share pages are resolved to the file); web pages open in a new tab
   - **choose where downloads go**: internal storage, an SD card or a USB OTG drive
 - **Storage & network at a glance** on the Downloads page — usage of every storage volume
   and live download / upload speed
-- **Ad & tracker blocker** (can be turned off) — besides its built-in list, it keeps
-  [`ads_domain.txt`](ads_domain.txt) from this repo up to date (fetched when you switch it on,
-  then weekly), so new ad domains are blocked without an app update
+- **Ad & tracker blocker** (can be turned off) — blocks ad domains and hides the empty
+  boxes ads leave behind. Besides its built-in rules it keeps [`ads_domain.txt`](ads_domain.txt)
+  from this repo up to date (fetched when you switch it on, then weekly), so new ad domains are
+  blocked without an app update
+- **Pop-up blocker** — pop-ups a site opens without a tap are blocked (allow per site)
 - **Night mode** rendered by the WebView itself — no white flash, and sites with their own
   dark theme use it
 - Bookmarks and history with **pinning** (long-press → pin, copy URL, delete), private sites
   hidden from history
-- Search with Google, Bing, DuckDuckGo or Yandex
+- Search with Google, Bing, DuckDuckGo or Yandex, with suggestions from your bookmarks and
+  history as you type (nothing leaves the device)
 - User-agent switcher, desktop mode, find in page, view source, translate
 - **Per-site camera / microphone / location** permissions, asked only when a site requests them
 - HTTP sign-in (e.g. router admin pages) and an error page with a retry button
