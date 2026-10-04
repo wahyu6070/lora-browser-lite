@@ -1,0 +1,17 @@
+# Lora ad block list
+#
+# Lora downloads this file (while its ad blocker is on: right after it's switched
+# on, then once a week) and blocks every domain listed here — and their
+# subdomains — on top of its built-in list.
+#
+# Format: one domain per line. "#" starts a comment. Hosts-file lines such as
+# "0.0.0.0 example.com" also work. Anything that isn't a plain domain is ignored.
+#
+# Add new domains at the end of the matching section.
+
+# --- Adsterra (rotates loader domains often) ---
+adsterra.com
+adsterratools.com
+accountut.com
+profitablecpmrate.com
+highperformanceformat.com

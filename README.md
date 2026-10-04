@@ -21,7 +21,9 @@ This repository only hosts **release APKs**. Get the latest version from
   - **choose where downloads go**: internal storage, an SD card or a USB OTG drive
 - **Storage & network at a glance** on the Downloads page — usage of every storage volume
   and live download / upload speed
-- **Ad & tracker blocker** (can be turned off)
+- **Ad & tracker blocker** (can be turned off) — besides its built-in list, it keeps
+  [`ads_domain.txt`](ads_domain.txt) from this repo up to date (fetched when you switch it on,
+  then weekly), so new ad domains are blocked without an app update
 - **Night mode** rendered by the WebView itself — no white flash, and sites with their own
   dark theme use it
 - Bookmarks and history with **pinning** (long-press → pin, copy URL, delete), private sites
