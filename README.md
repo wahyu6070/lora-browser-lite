@@ -54,3 +54,7 @@ riwayat penjelajahan ke mana pun.
 ## Pembuat
 
 Dibuat oleh [wahyu6070](https://github.com/wahyu6070).
+
+## Lisensi
+
+Lora dirilis di bawah [Lisensi MIT](LICENSE).
