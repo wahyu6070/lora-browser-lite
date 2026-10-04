@@ -16,6 +16,11 @@ This repository only hosts **release APKs**. Get the latest version from
   - pause / resume, automatic retry when the connection drops
   - downloads survive the app being closed and can be resumed
   - SHA-256 / MD5 checksum verification
+  - **download from a pasted link** — direct files download right away (PixelDrain and
+    BuzzHeavier share pages are resolved to the file); web pages open in a new tab
+  - **choose where downloads go**: internal storage, an SD card or a USB OTG drive
+- **Storage & network at a glance** on the Downloads page — usage of every storage volume
+  and live download / upload speed
 - **Ad & tracker blocker** (can be turned off)
 - **Night mode** rendered by the WebView itself — no white flash, and sites with their own
   dark theme use it
