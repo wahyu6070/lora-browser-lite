@@ -1,60 +1,62 @@
-# Lora — Browser Android yang Ringan
+# Lora — a lightweight Android browser
 
-Lora adalah browser web Android yang kecil (± 2 MB) dan cepat, dibangun dengan Kotlin,
-Jetpack Compose, dan Material 3 (dynamic color / Material You di Android 12+).
+Lora is a small (≈ 2 MB), fast web browser for Android, built with Kotlin, Jetpack Compose
+and Material 3 (dynamic color / Material You on Android 12+).
 
-Repo ini hanya berisi **rilis APK**. Unduh versi terbaru di halaman
+This repository only hosts **release APKs**. Get the latest version from
 [**Releases**](https://github.com/wahyu6070/lora-browser-lite/releases/latest).
 
-## Fitur
+## Features
 
-- **Multi-tab** dengan pemulihan sesi — tab dibuka kembali walau HP mati mendadak
-- **Bisa dijadikan browser default** — membuka link http/https dari aplikasi lain
-- **Mode penyamaran** dengan profil terpisah: cookie dan data situs dihapus saat keluar
-- **Pengunduh bawaan**
-  - konfirmasi sebelum mengunduh (nama berkas bisa diubah, ukuran ditampilkan)
-  - pause / resume, lanjut otomatis saat koneksi putus
-  - unduhan tetap tercatat setelah aplikasi ditutup dan bisa dilanjutkan
-  - cek checksum SHA-256 / MD5
-- **Pemblokir iklan & pelacak** (bisa dimatikan)
-- **Mode malam** untuk halaman web, tanpa kedipan putih saat memuat
-- Bookmark, riwayat, situs privat (disembunyikan dari riwayat)
-- Ganti user-agent, mode desktop, cari di halaman, lihat sumber halaman, terjemahkan
-- Izin kamera / mikrofon / lokasi **per situs**, hanya saat situs memintanya
-- Login HTTP (misalnya halaman admin router) dan halaman error dengan tombol coba lagi
-- Tampilan klasik (bar bawah) atau modern (bar atas ala Chrome), skala UI bisa diatur
-- Bahasa: Indonesia, Inggris, Jepang, Mandarin, Rusia, Arab
+- **Tabs** with session restore — your tabs come back even if the phone dies suddenly
+- **Can be your default browser** — opens http/https links from other apps
+- **Real incognito mode** with its own profile: cookies and site data are wiped when you leave
+- **Built-in downloader**
+  - confirmation before every download (editable file name, file size, copy link)
+  - pause / resume, automatic retry when the connection drops
+  - downloads survive the app being closed and can be resumed
+  - SHA-256 / MD5 checksum verification
+- **Ad & tracker blocker** (can be turned off)
+- **Night mode** rendered by the WebView itself — no white flash, and sites with their own
+  dark theme use it
+- Bookmarks and history with **pinning** (long-press → pin, copy URL, delete), private sites
+  hidden from history
+- Search with Google, Bing, DuckDuckGo or Yandex
+- User-agent switcher, desktop mode, find in page, view source, translate
+- **Per-site camera / microphone / location** permissions, asked only when a site requests them
+- HTTP sign-in (e.g. router admin pages) and an error page with a retry button
+- Classic (bottom bar) or modern (Chrome-style top bar) layout, adjustable UI scale
+- Languages: English, Indonesian, Japanese, Chinese, Russian, Arabic
 
-## Persyaratan
+## Requirements
 
-- Android 8.0 (API 26) atau lebih baru
-- Android System WebView / Google Chrome versi terbaru (disarankan, agar mode penyamaran
-  bisa memisahkan cookie)
+- Android 8.0 (API 26) or newer
+- An up-to-date Android System WebView / Google Chrome (recommended — needed for isolated
+  incognito cookies and native night mode)
 
-## Cara memasang
+## Installing
 
-1. Buka [Releases](https://github.com/wahyu6070/lora-browser-lite/releases/latest) dan unduh
-   berkas `lora-<versi>.apk`.
-2. Buka berkasnya, izinkan "Instal aplikasi tak dikenal" untuk pengelola berkas / browser
-   Anda bila diminta.
-3. Pembaruan bisa dipasang langsung di atas versi lama — data tidak hilang.
+1. Open [Releases](https://github.com/wahyu6070/lora-browser-lite/releases/latest) and download
+   `lora-<version>.apk`.
+2. Open the file and, if asked, allow "Install unknown apps" for your file manager or browser.
+3. Updates install over the previous version — your data is kept.
 
-## Izin yang dipakai
+## Permissions
 
-| Izin | Untuk apa |
+| Permission | Used for |
 |---|---|
-| Internet, status jaringan | Menjelajah web |
-| Notifikasi, layanan latar depan | Menampilkan dan menjaga unduhan tetap berjalan |
-| Penyimpanan (hanya Android 10 ke bawah) | Menyimpan unduhan ke folder Download |
-| Kamera, mikrofon, lokasi | Hanya ditanyakan saat sebuah situs memintanya |
+| Internet, network state | Browsing |
+| Notifications, foreground service | Showing downloads and keeping them running |
+| Storage (Android 10 and older only) | Saving downloads to the Download folder |
+| Camera, microphone, location | Only asked when a website requests them |
 
-Lora tidak memakai akses "semua berkas", tidak menyertakan pelacak, dan tidak mengirim
-riwayat penjelajahan ke mana pun.
+Lora does not use "All files access", ships no trackers, and never sends your browsing history
+anywhere.
 
-## Pembuat
+## Author
 
-Dibuat oleh [wahyu6070](https://github.com/wahyu6070).
+Made by [wahyu6070](https://github.com/wahyu6070).
 
-## Lisensi
+## License
 
-Lora dirilis di bawah [Lisensi MIT](LICENSE).
+Lora is released under the [MIT License](LICENSE).
